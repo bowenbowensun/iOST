@@ -45,7 +45,7 @@ class BuyStockViewModel: ObservableObject {
     }
     
     private func mockAPICall() async -> String {
-        try? await Task.sleep(nanoseconds: 2_000_000_000)
+        try? await Task.sleep(nanoseconds: 5_000_000_000)
         return "Stock is bought"
     }
 }
