@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0346AC742BC0BEE600B6C831 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346AC732BC0BEE600B6C831 /* Movies.swift */; };
+		0346AC772BC0BF0500B6C831 /* BuyStockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346AC762BC0BF0500B6C831 /* BuyStockViewModel.swift */; };
+		0346AC792BC0C5E900B6C831 /* ExecutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346AC782BC0C5E900B6C831 /* ExecutingView.swift */; };
+		0346AC7B2BC0C5F300B6C831 /* FailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346AC7A2BC0C5F300B6C831 /* FailureView.swift */; };
+		0346AC7D2BC0C60500B6C831 /* ExecutedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346AC7C2BC0C60500B6C831 /* ExecutedView.swift */; };
 		035567532BBCE5D000F04C6B /* PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567522BBCE5D000F04C6B /* PracticeApp.swift */; };
 		035567552BBCE5D000F04C6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567542BBCE5D000F04C6B /* ContentView.swift */; };
 		035567572BBCE5D100F04C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035567562BBCE5D100F04C6B /* Assets.xcassets */; };
 		0355675B2BBCE5D100F04C6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0355675A2BBCE5D100F04C6B /* Preview Assets.xcassets */; };
+		035567622BBCECFD00F04C6B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567612BBCECFD00F04C6B /* HomeView.swift */; };
+		035567642BBCED0800F04C6B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567632BBCED0800F04C6B /* SettingsView.swift */; };
+		035567662BBCEF0700F04C6B /* BuyStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567652BBCEF0700F04C6B /* BuyStock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0346AC732BC0BEE600B6C831 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		0346AC762BC0BF0500B6C831 /* BuyStockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStockViewModel.swift; sourceTree = "<group>"; };
+		0346AC782BC0C5E900B6C831 /* ExecutingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutingView.swift; sourceTree = "<group>"; };
+		0346AC7A2BC0C5F300B6C831 /* FailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureView.swift; sourceTree = "<group>"; };
+		0346AC7C2BC0C60500B6C831 /* ExecutedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutedView.swift; sourceTree = "<group>"; };
 		0355674F2BBCE5D000F04C6B /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		035567522BBCE5D000F04C6B /* PracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeApp.swift; sourceTree = "<group>"; };
 		035567542BBCE5D000F04C6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		035567562BBCE5D100F04C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		035567582BBCE5D100F04C6B /* Practice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Practice.entitlements; sourceTree = "<group>"; };
 		0355675A2BBCE5D100F04C6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		035567612BBCECFD00F04C6B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		035567632BBCED0800F04C6B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		035567652BBCEF0700F04C6B /* BuyStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0346AC722BC0BECE00B6C831 /* BuyStock */ = {
+			isa = PBXGroup;
+			children = (
+				035567652BBCEF0700F04C6B /* BuyStock.swift */,
+				0346AC7C2BC0C60500B6C831 /* ExecutedView.swift */,
+				0346AC782BC0C5E900B6C831 /* ExecutingView.swift */,
+				0346AC7A2BC0C5F300B6C831 /* FailureView.swift */,
+				0346AC762BC0BF0500B6C831 /* BuyStockViewModel.swift */,
+			);
+			path = BuyStock;
+			sourceTree = "<group>";
+		};
+		0346AC752BC0BEEA00B6C831 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				0346AC732BC0BEE600B6C831 /* Movies.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		035567462BBCE5D000F04C6B = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +90,10 @@
 			children = (
 				035567522BBCE5D000F04C6B /* PracticeApp.swift */,
 				035567542BBCE5D000F04C6B /* ContentView.swift */,
+				035567612BBCECFD00F04C6B /* HomeView.swift */,
+				035567632BBCED0800F04C6B /* SettingsView.swift */,
+				0346AC752BC0BEEA00B6C831 /* Movies */,
+				0346AC722BC0BECE00B6C831 /* BuyStock */,
 				035567562BBCE5D100F04C6B /* Assets.xcassets */,
 				035567582BBCE5D100F04C6B /* Practice.entitlements */,
 				035567592BBCE5D100F04C6B /* Preview Content */,
@@ -139,7 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035567622BBCECFD00F04C6B /* HomeView.swift in Sources */,
+				035567662BBCEF0700F04C6B /* BuyStock.swift in Sources */,
+				0346AC742BC0BEE600B6C831 /* Movies.swift in Sources */,
+				0346AC7D2BC0C60500B6C831 /* ExecutedView.swift in Sources */,
+				0346AC772BC0BF0500B6C831 /* BuyStockViewModel.swift in Sources */,
+				035567642BBCED0800F04C6B /* SettingsView.swift in Sources */,
+				0346AC792BC0C5E900B6C831 /* ExecutingView.swift in Sources */,
 				035567552BBCE5D000F04C6B /* ContentView.swift in Sources */,
+				0346AC7B2BC0C5F300B6C831 /* FailureView.swift in Sources */,
 				035567532BBCE5D000F04C6B /* PracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
