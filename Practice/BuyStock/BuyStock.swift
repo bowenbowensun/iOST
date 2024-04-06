@@ -12,16 +12,10 @@ struct BuyStock: View {
     @StateObject var vm = BuyStockViewModel()
     
     var body: some View {
-        ZStack {
+        Group {
             switch vm.state {
             case .prep:
-                Button {
-                    vm.buyStock()
-                } label: {
-                    Text("Submit Order")
-                        .modifier(MyButtonModifier())
-                }
-
+                SubmitView(vm: vm)
             case .executing:
                 ExecutingView()
             case .executed:
@@ -31,7 +25,7 @@ struct BuyStock: View {
             }
         }
         .animation(.easeIn, value: vm.state)
-        .ignoresSafeArea()
+        .ignoresSafeArea(edges: .top)
     }
 }
 

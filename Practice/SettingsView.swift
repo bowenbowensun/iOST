@@ -10,6 +10,9 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         Text("Settings")
+            .padding(50)
+            .background(Color.orange)
+            .foregroundColor(.white)
     }
 }
 

@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem { Image(systemName: "gear") }
                 
         }
-        .accentColor(.orange)
+        .accentColor(.primary)
     }
 }
 
