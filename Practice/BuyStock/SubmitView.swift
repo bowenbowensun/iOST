@@ -11,11 +11,13 @@ struct SubmitView: View {
     @ObservedObject var vm: BuyStockViewModel
     @State private var yOffset: CGFloat = 0
     @State private var ready = false
+    @State private var textOpacity: CGFloat = 1
+    
     var body: some View {
         GeometryReader { proxy in
             ZStack {
                 Color.blue
-                OrderView(vm: vm, ready: $ready)
+                OrderView(vm: vm, ready: $ready, textOpacity: $textOpacity)
                     .offset(x: 0, y: yOffset)
                     .gesture(
                         DragGesture()
@@ -24,6 +26,12 @@ struct SubmitView: View {
                                     return
                                 }
                                 yOffset = value.translation.height
+                                let frameHeight = proxy.size.height
+                                if abs(yOffset) < frameHeight / 2 {
+                                    textOpacity = 1 - abs(yOffset) / (frameHeight / 2)
+                                } else {
+                                    textOpacity = 0
+                                }
                             })
                             .onEnded({ value in
                                 if abs(yOffset) > proxy.size.height / 2 {
@@ -34,6 +42,7 @@ struct SubmitView: View {
                                     }
                                 } else {
                                     yOffset = 0
+                                    textOpacity = 1
                                 }
                             })
                     )
@@ -47,6 +56,7 @@ struct SubmitView: View {
 private struct OrderView: View {
     @ObservedObject var vm: BuyStockViewModel
     @Binding var ready: Bool
+    @Binding var textOpacity: CGFloat
     var body: some View {
         VStack {
             ZStack {
@@ -74,6 +84,7 @@ private struct OrderView: View {
                 }
                 .foregroundStyle(.white)
                 .padding()
+                .opacity(textOpacity)
             }
         }
         .animation(.easeIn, value: ready)
