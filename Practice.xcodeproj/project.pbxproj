@@ -20,6 +20,7 @@
 		035567622BBCECFD00F04C6B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567612BBCECFD00F04C6B /* HomeView.swift */; };
 		035567642BBCED0800F04C6B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567632BBCED0800F04C6B /* SettingsView.swift */; };
 		035567662BBCEF0700F04C6B /* BuyStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567652BBCEF0700F04C6B /* BuyStock.swift */; };
+		03E690792BC356D200216F56 /* MovePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E690782BC356D200216F56 /* MovePosition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		035567612BBCECFD00F04C6B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		035567632BBCED0800F04C6B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		035567652BBCEF0700F04C6B /* BuyStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStock.swift; sourceTree = "<group>"; };
+		03E690782BC356D200216F56 /* MovePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePosition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				035567542BBCE5D000F04C6B /* ContentView.swift */,
 				035567612BBCECFD00F04C6B /* HomeView.swift */,
 				035567632BBCED0800F04C6B /* SettingsView.swift */,
+				03E6907A2BC356DE00216F56 /* MovePosition */,
 				0346AC752BC0BEEA00B6C831 /* Movies */,
 				0346AC722BC0BECE00B6C831 /* BuyStock */,
 				035567562BBCE5D100F04C6B /* Assets.xcassets */,
@@ -110,6 +113,14 @@
 				0355675A2BBCE5D100F04C6B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03E6907A2BC356DE00216F56 /* MovePosition */ = {
+			isa = PBXGroup;
+			children = (
+				03E690782BC356D200216F56 /* MovePosition.swift */,
+			);
+			path = MovePosition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				0346AC742BC0BEE600B6C831 /* Movies.swift in Sources */,
 				0346AC7D2BC0C60500B6C831 /* ExecutedView.swift in Sources */,
 				0346AC772BC0BF0500B6C831 /* BuyStockViewModel.swift in Sources */,
+				03E690792BC356D200216F56 /* MovePosition.swift in Sources */,
 				035567642BBCED0800F04C6B /* SettingsView.swift in Sources */,
 				0346AC792BC0C5E900B6C831 /* ExecutingView.swift in Sources */,
 				035567552BBCE5D000F04C6B /* ContentView.swift in Sources */,

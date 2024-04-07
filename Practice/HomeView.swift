@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationStack {
-            HStack {
+            VStack {
                 NavigationLink {
                     BuyStock()
                 } label: {
@@ -19,11 +19,19 @@ struct HomeView: View {
                 }
                 
                 NavigationLink {
-                    BuyStock()
+                    Movies()
                 } label: {
                     Text("API List")
                         .modifier(MyButtonModifier())
                 }
+                
+                NavigationLink {
+                    MovePosition()
+                } label: {
+                    Text("Move Animate")
+                        .modifier(MyButtonModifier())
+                }
+
             }
         }
     }
