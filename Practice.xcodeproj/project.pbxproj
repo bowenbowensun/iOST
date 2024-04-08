@@ -21,6 +21,7 @@
 		035567642BBCED0800F04C6B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567632BBCED0800F04C6B /* SettingsView.swift */; };
 		035567662BBCEF0700F04C6B /* BuyStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035567652BBCEF0700F04C6B /* BuyStock.swift */; };
 		03E690792BC356D200216F56 /* MovePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E690782BC356D200216F56 /* MovePosition.swift */; };
+		03E6907C2BC3640900216F56 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6907B2BC3640900216F56 /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		035567632BBCED0800F04C6B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		035567652BBCEF0700F04C6B /* BuyStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStock.swift; sourceTree = "<group>"; };
 		03E690782BC356D200216F56 /* MovePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePosition.swift; sourceTree = "<group>"; };
+		03E6907B2BC3640900216F56 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				0346AC732BC0BEE600B6C831 /* Movies.swift */,
+				03E6907B2BC3640900216F56 /* MovieViewModel.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				0346AC792BC0C5E900B6C831 /* ExecutingView.swift in Sources */,
 				035567552BBCE5D000F04C6B /* ContentView.swift in Sources */,
 				0346AC7B2BC0C5F300B6C831 /* FailureView.swift in Sources */,
+				03E6907C2BC3640900216F56 /* MovieViewModel.swift in Sources */,
 				035567532BBCE5D000F04C6B /* PracticeApp.swift in Sources */,
 				0346AC7F2BC1F71A00B6C831 /* SubmitView.swift in Sources */,
 			);

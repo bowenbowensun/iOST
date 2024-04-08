@@ -14,7 +14,6 @@ struct SettingsView: View {
     var body: some View {
         GeometryReader { proxy in
             ZStack {
-                Color.cyan
                 Text("Settings")
                     .bold()
                     .frame(width: 100, height: 100)
