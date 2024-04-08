@@ -8,7 +8,7 @@
 import Foundation
 
 class MovieViewModel: ObservableObject {
-    @Published var displayableCat = [DisplayCat]()
+    @Published var displayableCat = [CatViewModel]()
     
     private func catFactCallback(completion: @escaping (_ catList: [CatData]) -> Void) {
         guard let url = URL(string: "https://cat-fact.herokuapp.com/facts") else {
@@ -41,11 +41,11 @@ class MovieViewModel: ObservableObject {
         }
     }
     
-    private func displayable(_ catList: [CatData]) -> [DisplayCat] {
+    private func displayable(_ catList: [CatData]) -> [CatViewModel] {
         return catList.enumerated().map { (index, catData) in
             let dogImgName = 200 + index
             let imgUrl = URL(string: "https://http.dog/\(dogImgName).jpg")
-            return DisplayCat.init(id: catData._id, text: catData.text, imgUrl: imgUrl)
+            return CatViewModel.init(id: catData._id, text: catData.text, imgUrl: imgUrl)
         }
     }
     
@@ -83,8 +83,16 @@ struct CatData: Codable {
     let createdAt: String
 }
 
-struct DisplayCat: Identifiable {
+class CatViewModel: Identifiable, ObservableObject {
     let id: String
     let text: String
     let imgUrl: URL?
+    
+    @Published var tapped = false
+    
+    init(id: String, text: String, imgUrl: URL?) {
+        self.id = id
+        self.text = text
+        self.imgUrl = imgUrl
+    }
 }

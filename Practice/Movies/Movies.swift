@@ -17,21 +17,34 @@ struct Movies: View {
                 .modifier(MyButtonModifier())
         }
         List(vm.displayableCat) { cat in
-            HStack {
-                AsyncImage(url: cat.imgUrl) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 100, height: 100)
-                        .padding(.trailing, 10)
-                        
-                } placeholder: {
-                    ProgressView()
-                }
-                Text(cat.text)
-            }
+            CatCell(catVM: cat)
         }
         .listStyle(.plain)
+    }
+}
+
+struct CatCell: View {
+    @ObservedObject var catVM: CatViewModel
+    var body: some View {
+        HStack {
+            AsyncImage(url: catVM.imgUrl) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 100)
+                    .padding(.trailing, 10)
+                    
+            } placeholder: {
+                ProgressView()
+            }
+            Text(catVM.text)
+        }
+        .scaleEffect(catVM.tapped ? 0.8 : 1)
+        .onTapGesture {
+            withAnimation {
+                catVM.tapped.toggle()
+            }
+        }
     }
 }
 
