@@ -36,6 +36,9 @@ struct SettingsView: View {
                     }
             }
         }
+        .sheet(isPresented: $paused) {
+            Text("OK")
+        }
     }
     
     private func randOffset(frameSize: CGSize) -> CGSize {

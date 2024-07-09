@@ -9,17 +9,34 @@ import SwiftUI
 
 struct Movies: View {
     @StateObject var vm = MovieViewModel()
+    @State private var isOn = false
     var body: some View {
-        Button {
-            vm.catFactNativeAsync()
-        } label: {
-            Text("Test API")
-                .modifier(MyButtonModifier())
+        HStack {
+            Button {
+                vm.catFactNativeAsync()
+            } label: {
+                Text("Test API")
+                    .modifier(MyButtonModifier())
+            }
+            Toggle("", isOn: $isOn)
+                .labelsHidden()
         }
-        List(vm.displayableCat) { cat in
-            CatCell(catVM: cat)
+        .background(Color.red)
+        ZStack {
+            Color.blue
+            List(vm.displayableCat) { cat in
+                CatCell(catVM: cat)
+            }
+            .listStyle(.plain)
+            .background(Color.green)
+            
+            VStack {
+                Spacer()
+                Rectangle()
+                    .frame(width: 200, height: 50)
+                    .cornerRadius(20)
+            }
         }
-        .listStyle(.plain)
     }
 }
 
